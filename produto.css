@@ -1,0 +1,44 @@
+
+.produto-detalhe {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .produto-detalhe img {
+    max-width: 300px;
+    border-radius: 16px;
+  }
+  
+  .produto-detalhe h1 {
+    font-size: 2rem;
+    color: #755231;
+  }
+  
+  .produto-detalhe p {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .adicionar-btn {
+    background-color: #cdb48f;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adicionar-btn:hover {
+    background-color: #b89d79;
+  }
+  
