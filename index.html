@@ -14,7 +14,7 @@
             <li><a href="#home" class="menu_link">home</a></li>
             <li><a href="#aroma" class="menu_link">aroma da casa</a></li>
             <li><a href="#cozinheira" class="menu_link">quem faz?</a></li>
-            <li><a href="#personalize" class="menu_link">personalize o seu!</a></li>
+            <li><a href="#personalize" class="menu_link">personalize</a></li>
         </ul>
     </nav>
     <section id="logo" class="logo">
@@ -47,5 +47,38 @@
           
           <script src="./js/catalogo.js"></script>          
     </section>   
+
+    <section id="cozinheira" class="cozinheira">
+        <h2 class="cozinheira-titulo">quem faz?</h2>
+        <p class="paragrafo_sobre">
+            sou a saboarista e criadora da SC Saboaria, apaixonada por criar produtos que cuidam da pele.
+            com formação em curso técnico especializado na indústria de cosméticos, crio receitas únicas que combinam
+            ingredientes naturais para oferecer o melhor em cuidados pessoais. <br> <br>
+            minha missão é proporcionar experiências sensoriais incríveis através de sabonetes e especiarias artesanais,
+            sempre respeitando a natureza e promovendo a sustentabilidade!
+        </p>
+        <div class="cozinheira-container">
+            <img src="./img/susana.jpg" alt="Imagem da cozinheira" class="cozinheira-imagem">
+            <img src="./img/susanaegabi.jpg" alt="Imagem da cozinheira" class="cozinheira-imagem">
+            <img src="./img/susanapraia.jpg" alt="Imagem da cozinheira" class="cozinheira-imagem">
+        </div>
+    </section>    
+
+    <section id="personalize" class="personalize">
+        <h2 class="contatos-titulo">personalize sua especiaria entrando com contato conosco!</h2>
+        <p class="paragrafo_sobre">entre em contato no campo abaixo informando seu nome e como gostaria de personalizar o seu produto!</p>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
+            <div class="grupo-form"> 
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea placeholder="Digite a sua mensagem" rows="4" class="campo-form" id="mensagem"></textarea>
+            </div>
+            <p id="mensagem-erro" style="display: none;" class="mensagem-erro">Preencha todos os campos antes de enviar.</p>
+        
+            <button type="submit" class="botao-form">Enviar pelo WhatsApp</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
