@@ -10,45 +10,55 @@
 <body>
     <nav class="nav">
         <ul class="menu" id="menu">
-            <li><a href="#logo" class="menu_link">SC</a></li>
-            <li><a href="#home" class="menu_link">home</a></li>
-            <li><a href="#aroma" class="menu_link">aroma da casa</a></li>
-            <li><a href="#cozinheira" class="menu_link">quem faz?</a></li>
-            <li><a href="#personalize" class="menu_link">personalize</a></li>
+          <li><a href="#logo" class="menu_link">SC</a></li>
+          <li><a href="#home" class="menu_link">Home</a></li>
+          <li><a href="aroma.html" class="menu_link">Aroma da casa</a></li>
+          <li><a href="#personalize" class="menu_link">Personalize o seu!</a></li>
         </ul>
+        <button class="menu-toggle" onclick="toggleSideMenu()">☰</button>
     </nav>
+      
+      <!-- MENU LATERAL -->
+      <div class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleSideMenu()">✖</button>
+        <ul>
+          <li><a href="#logo">SC</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="aroma.html">Aroma da casa</a></li>
+          <li><a href="#personalize">Personalize o seu!</a></li>
+          <li><a href="#" onclick="openCart()">Carrinho</a></li>
+        </ul>
+      </div>
+      
+      <!-- PÁGINA INTERNA DO CARRINHO -->
+      <div class="side-cart" id="sideCart">
+        <button class="close-btn" onclick="closeCart()">✖</button>
+        <h2>Seu Carrinho</h2>
+        <div class="cart-items">
+          <div class="cart-item">Produto 1</div>
+          <div class="cart-item">Produto 2</div>
+          <!-- Adicione mais produtos dinamicamente aqui -->
+        </div>
+      </div>    
+
     <section id="logo" class="logo">
         <img src="./img/logo.png" alt="logo png da saboaria">
     </section>
 
     <main id="home" class="sobre">
-        <h1 class="home">como fazemos nossos produtos?</h1>
+        <h1 class="home">Como fazemos nossos produtos?</h1>
         <div class="sobre-caixa">
-            <p class="paragrafo_sobre">nossos produtos são feitos com ingredientes cuidadosamente selecionados para garantir qualidade e eficácia. utilizamos glicerina vegetal, que proporciona hidratação profunda, deixando a pele suave e macia. além disso, nossos sabonetes e cosméticos contam com extratos naturais que ajudam a nutrir e revitalizar a pele, oferecendo benefícios calmantes e antioxidantes. as manteigas vegetais, como a de karité, são adicionadas para promover a elasticidade e a proteção, mantendo a pele hidratada e saudável. cada produto é formulado com amor e dedicação, visando oferecer o melhor da natureza para o cuidado diário!</p>
+            <p class="paragrafo_sobre">Nossos produtos são desenvolvidos com ingredientes naturais cuidadosamente escolhidos para garantir qualidade e eficácia. Utilizamos glicerina vegetal, que promove hidratação profunda e deixa a pele macia. Os extratos naturais oferecem propriedades calmantes e antioxidantes, enquanto manteigas vegetais, como a de karité, nutrem e protegem, mantendo a pele saudável. Tudo é feito com carinho, unindo o melhor da natureza ao cuidado diário.</p>
         </div>
-    </main>
+        <div class="sobre-caixa">
+            <p class="paragrafo_sobre">Nossos produtos são elaborados com matérias-primas selecionadas com critério e carinho. Optamos por glicerina vegetal, conhecida por sua ação altamente hidratante, que deixa a pele macia e nutrida. Incorporamos ativos botânicos que oferecem benefícios terapêuticos, ajudando a acalmar, proteger e revitalizar. Também utilizamos manteigas vegetais, como a de karité, para melhorar a elasticidade e reforçar a barreira natural da pele. Todo o processo é feito de forma artesanal, com atenção aos detalhes e respeito à natureza, garantindo um cuidado especial em cada item.</p>
+        </div>
+        <div class="sobre-caixa">
+            <p class="paragrafo_sobre">Cada item da nossa linha é produzido com elementos naturais escolhidos com atenção para entregar o máximo de qualidade. A glicerina vegetal, presente em nossos sabonetes e cosméticos, promove hidratação profunda e um toque suave à pele. Os extratos de plantas medicinais e frutas trazem propriedades antioxidantes e nutritivas que renovam e protegem. As manteigas vegetais, como a de karité e a de cacau, são adicionadas para intensificar o cuidado, deixando a pele mais firme e luminosa. Criamos com propósito: unir bem-estar, natureza e carinho em cada fórmula.</p>
+        </div>
+    </main>   
 
-    <section id="aroma" class="aroma">
-        <h2 class="catalogo">catálogo</h2>
-        <div class="catalogo-container">
-            <div class="produto-card" onclick="abrirProduto('floral')">
-              <img src="./img/sabonete_argila_azul.png" alt="Sabonete Floral">
-              <h3>Sabonete de Argila Azull</h3>
-            </div>
-            <div class="produto-card" onclick="abrirProduto('citrico')">
-              <img src="./img/sabonete2.png" alt="Sabonete Cítrico">
-              <h3>Sabonete Cítrico</h3>
-            </div>
-            <div class="produto-card" onclick="abrirProduto('ervas')">
-              <img src="./img/sabonete3.png" alt="Sabonete de Ervas">
-              <h3>Sabonete de Ervas</h3>
-            </div>
-          </div>
-          
-          <script src="./js/catalogo.js"></script>          
-    </section>   
-
-    <section id="cozinheira" class="cozinheira">
+    <!--<section id="cozinheira" class="cozinheira">
         <h2 class="cozinheira-titulo">quem faz?</h2>
         <p class="paragrafo_sobre">
             sou a saboarista e criadora da SC Saboaria, apaixonada por criar produtos que cuidam da pele.
@@ -62,11 +72,11 @@
             <img src="./img/susanaegabi.jpg" alt="Imagem da cozinheira" class="cozinheira-imagem">
             <img src="./img/susanapraia.jpg" alt="Imagem da cozinheira" class="cozinheira-imagem">
         </div>
-    </section>    
+    </section> -->   
 
     <section id="personalize" class="personalize">
-        <h2 class="contatos-titulo">personalize sua especiaria entrando com contato conosco!</h2>
-        <p class="paragrafo_sobre">entre em contato no campo abaixo informando seu nome e como gostaria de personalizar o seu produto!</p>
+        <h2 class="contatos-titulo">Personalize sua especiaria entrando com contato conosco!</h2>
+        <p class="paragrafo_sobre">Entre em contato no campo abaixo informando seu nome e como gostaria de personalizar o seu produto que dentro de alguns minutos iremos te responder!</p>
         <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
             <div class="grupo-form"> 
                 <input placeholder="Nome" class="campo-form" id="nome">

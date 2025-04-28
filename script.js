@@ -24,3 +24,15 @@ function enviarMensagem(event) {
     document.getElementById('formulario').reset();
 }
 
+function toggleSideMenu() {
+    document.getElementById("sideMenu").classList.toggle("open");
+  }
+
+  function openCart() {
+    document.getElementById("sideMenu").classList.remove("open");
+    document.getElementById("sideCart").classList.add("open");
+  }
+
+  function closeCart() {
+    document.getElementById("sideCart").classList.remove("open");
+}
